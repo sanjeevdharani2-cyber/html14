@@ -1,70 +1,84 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>Absolute and fixed positioning</title>
+<title>Absolute Positioning</title>
 
-    <style>
-        p {
-            margin: 0;
-        }
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    text-align: center;
+}
 
-        body {
-            width: 550px;
-            padding: 0 25px 20px;
-            border: 1px solid black;
+h1 {
+    color: blue;
+}
 
-            /* TODO 1: Set the body positioning context */
-        }
+.container {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background: lightgray;
+    margin: 40px auto;
+    border: 2px solid black;
+}
 
-        aside {
-            width: 80px;
-            padding: 1em;
-            border: 1px solid black;
+.box1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: red;
+    color: white;
+    padding: 20px;
+}
 
-            /* TODO 2: Use absolute positioning */
-            /* TODO 3: Position the aside 30px from the right */
-            /* TODO 4: Position the aside 50px from the top */
-        }
-    </style>
+.box2 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 20px;
+}
+
+.box3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: blue;
+    color: white;
+    padding: 20px;
+}
+
+.box4 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: purple;
+    color: white;
+    padding: 20px;
+}
+</style>
 </head>
 
 <body>
-    <main>
-        <h1>Our speakers this season</h1>
 
-        <ul>
-            <li>
-                October:
-                <a class="date_passed" href="speakers/toobin.html">
-                    Jeffrey Toobin
-                </a>
-            </li>
+<h1>CSS Absolute Positioning</h1>
 
-            <li>
-                November:
-                <a class="date_passed" href="speakers/sorkin.html">
-                    Andrew Ross Sorkin
-                </a>
-            </li>
+<p>Example of absolute positioning in HTML.</p>
 
-            <li>
-                January:
-                <a href="speakers/chua.html">
-                    Amy Chua
-                </a>
-            </li>
-        </ul>
+<div class="container">
 
-        <p>Please contact us for tickets.</p>
-    </main>
+    <div class="box1">Top Left</div>
 
-    <aside>
-        <p>
-            <a href="raffle.html">
-                Enter to win a free ticket!
-            </a>
-        </p>
-    </aside>
+    <div class="box2">Top Right</div>
+
+    <div class="box3">Bottom Left</div>
+
+    <div class="box4">Bottom Right</div>
+
+</div>
+
 </body>
 </html>
